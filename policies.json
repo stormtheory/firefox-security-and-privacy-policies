@@ -1,0 +1,163 @@
+{
+  "policies": {
+    "AutofillAddressEnabled": true,
+    "AutofillCreditCardEnabled": false,
+    "AppAutoUpdate": false,
+    "BackgroundAppUpdate": false,
+    "BlockAboutAddons": false,
+    "BlockAboutConfig": false,
+    "BlockAboutProfiles": false,
+    "BlockAboutSupport": false,
+    "DefaultDownloadDirectory": "${home}/Downloads",
+    "DisableBuiltinPDFViewer": false,
+    "DisableDeveloperTools": true,
+    "DisableFirefoxAccounts": false,
+    "DisableFirefoxScreenshots": false,
+    "DisableFirefoxStudies": true,
+    "DisableProfileImport": true,
+    "DisableProfileRefresh": true,
+    "DisableSystemAddonUpdate": false,
+    "DisableTelemetry": true,
+    "DisplayBookmarksToolbar": "always",
+    "DisplayMenuBar": "default-off",
+    "DNSOverHTTPS": {
+      "Enabled":  true,
+      "Locked": false
+    },
+    "DontCheckDefaultBrowser": true,
+    "DownloadDirectory": "${home}/Downloads",
+    "EnableTrackingProtection": {
+      "Value": true,
+      "Locked": true,
+      "Cryptomining": true,
+      "Fingerprinting": true,
+      "EmailTracking": true
+    },
+    "EncryptedMediaExtensions": {
+      "Enabled": false,
+      "Locked": true
+    },
+    "ExtensionSettings": {
+      "*": {
+        "blocked_install_message": "NOT TODAY!, Please contact your admin if you think an extension should be unblocked.",
+        "install_sources": ["about:addons","https://addons.mozilla.org/"],
+        "installation_mode": "blocked",
+        "allowed_types": ["extension"]
+      },
+      "uBlock0@raymondhill.net": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
+      }
+    },
+    "ExtensionUpdate": true,
+    "FirefoxHome": {
+      "Search": true,
+      "TopSites": false,
+      "SponsoredTopSites": false,
+      "Highlights": false,
+      "Pocket": false,
+      "SponsoredPocket": false,
+      "Snippets": false,
+      "Locked": true
+    },
+    "FirefoxSuggest": {
+      "WebSuggestions": true,
+      "SponsoredSuggestions": false,
+      "ImproveSuggest": false,
+      "Locked": false
+    },
+    "Homepage": {
+      "URL": "https://duckduckgo.com",
+      "Locked": true,
+      "StartPage": "homepage-locked"
+    },
+    "HttpsOnlyMode": "force_enabled",
+    "NoDefaultBookmarks": true,
+    "OfferToSaveLogins": false,
+    "OverrideFirstRunPage": "https://duckduckgo.com",
+    "OverridePostUpdatePage": "https://duckduckgo.com",
+    "PasswordManagerEnabled": false,
+    "PrimaryPassword": false,
+    "PrintingEnabled": true,
+    "PromptForDownloadLocation": false,
+    "RequestedLocales": "en-US",
+    "NetworkPrediction": false,
+    "SanitizeOnShutdown": {
+      "Downloads": true,
+      "History": true,
+      "Locked": true
+    },
+    "ShowHomeButton": true,
+    "SSLVersionMax": "tls1.3",
+    "SSLVersionMin": "tls1.2",
+    "SupportMenu": {
+      "Title": "Support Menu",
+      "URL": "http://example.com/support",
+      "AccessKey": "S"
+    },
+    "StartDownloadsInTempDirectory": false,
+    "TranslateEnabled": true,
+    "UserMessaging": {
+      "ExtensionRecommendations": false,
+      "FeatureRecommendations": false,
+      "DisableFeedbackCommands": true,
+      "UrlbarInterventions": false,
+      "SkipOnboarding": true,
+      "MoreFromMozilla": false,
+      "Locked": true
+    },
+    "DisabledCiphers": {
+      "TLS_RSA_WITH_3DES_EDE_CBC_SHA": true
+     },
+    "UseSystemPrintDialog": true,
+
+
+
+    "Preferences": {
+      "extensions.htmlaboutaddons.recommendations.enabled": {
+        "Value": false,
+        "Status": "locked"
+     },
+      "browser.contentblocking.category": {
+        "Value": "strict",
+        "Status": "locked"
+     },
+    "dom.disable_window_flip": {
+      "Value": true,
+      "Status": "locked"
+     },
+    "dom.disable_window_move_resize": {
+      "Value": true,
+      "Status": "locked"
+     },
+     "browser.search.update": {
+       "Value": false,
+       "Status": "locked"
+      },
+      "dom.security.https_only_mode_ever_enabled": {
+       "Value": true,
+       "Status": "locked"
+      },
+      "dom.security.https_only_mode": {
+       "Value": true,
+       "Status": "locked"
+      },
+      "geo.enabled": {
+       "Value": false,
+       "Status": "locked"
+      },
+     "security.default_personal_cert": {
+       "Value": "Ask Every Time",
+       "Status": "locked"
+      }
+  },
+
+
+    "SecurityDevices": {
+      "OpenSC": "/usr/lib64/pkcs11/opensc-pkcs11.so",
+      "CoolKey": "/usr/lib64/pkcs11/libcoolkeypk11.so",
+      "P11-Kit": "/usr/lib64/pkcs11/p11-kit-trust.so",
+      "BuiltinRoots": "/usr/lib64/libnssckbi.so"
+     }
+  }
+}
