@@ -20,6 +20,6 @@ if [ "$ANS" == y ];then
                 chmod 644 /usr/lib/firefox/mozilla.cfg
                 chmod 644 /usr/lib/firefox/distribution/policies.json
                 cp $CONFIG_DIR/Mozillacfg/autoconfig.js /usr/lib/firefox/defaults/pref/
-                cp $CONFIG_DIR/Mozillacfg/policies.json /usr/lib/firefox/distribution/policies.json
+                chmod 644 /usr/lib/firefox/defaults/pref/autoconfig.js
         fi
 fi
