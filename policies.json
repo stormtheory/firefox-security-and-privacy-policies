@@ -90,11 +90,6 @@
     "ShowHomeButton": true,
     "SSLVersionMax": "tls1.3",
     "SSLVersionMin": "tls1.2",
-    "SupportMenu": {
-      "Title": "Support Menu",
-      "URL": "http://example.com/support",
-      "AccessKey": "S"
-    },
     "StartDownloadsInTempDirectory": false,
     "TranslateEnabled": true,
     "UserMessaging": {
