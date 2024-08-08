@@ -1,8 +1,7 @@
-#### Built and tested for Ubuntu (Linux Mint 22) not for RHEL or Flatpak #####
-Firefox is found in /usr/lib on Ubuntu but /usr/lib64 on RHEL
-
 # firefox-security-and-privacy-policies
 The purpose is to create a template for everyday browsing and security combining usable DISA STIGs with Common-sense privacy and security practices. Think LibreWolf but without another group in the middle.
+#
+Built and tested for Ubuntu (Linux Mint) not for RHEL or Flatpak. Firefox is found in /usr/lib on Ubuntu but /usr/lib64 on RHEL systems.
 #
 Q: Why a policy and a config file? 
 A: I have found that a policy file can do stuff a config file can not do 
