@@ -152,12 +152,11 @@
       }
   },
 
-
     "SecurityDevices": {
-      "OpenSC": "/usr/lib64/pkcs11/opensc-pkcs11.so",
-      "CoolKey": "/usr/lib64/pkcs11/libcoolkeypk11.so",
-      "P11-Kit": "/usr/lib64/pkcs11/p11-kit-trust.so",
-      "BuiltinRoots": "/usr/lib64/libnssckbi.so"
+      "OpenSC": "/usr/lib/x86_64-linux-gnu/pkcs11/opensc-pkcs11.so",
+      "CoolKey": "/usr/lib/pkcs11/libcoolkeypk11.so",
+      "P11-Kit": "/usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so",
+      "BuiltinRoots": "/usr/lib/firefox/libnssckbi.so"
      }
   }
 }
