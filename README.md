@@ -1,4 +1,4 @@
-#### Built and tested for Ubuntu (Linux Mint 22) #####
+#### Built and tested for Ubuntu (Linux Mint 22) not for RHEL or Flatpak #####
 Firefox is found in /usr/lib on Ubuntu but /usr/lib64 on RHEL
 
 # firefox-security-and-privacy-policies
