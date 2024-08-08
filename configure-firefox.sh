@@ -3,23 +3,34 @@ cd "$(dirname "$0")"
 
 echo ' '
 
+CONFIG_DIR=.
+
+if [ -d /usr/lib/firefox/ ];then
+        BANNER="  ### FIREFOX -Ubuntu- POLICY UPDATE ###"
+        INSTALL_LOCATION=/usr/lib/firefox
+elif [ -d /usr/lib64/firefox/ ];then
+        BANNER="  ### FIREFOX -RHEL- POLICY UPDATE ###"
+        INSTALL_LOCATION=/usr/lib64/firefox
+else
+        echo "ERROR: Firefox install not found..."
+        exit
+fi
+
+
 if echo "$@"|egrep -q 'unbox|undo|unlock';then
-        rm /usr/lib/firefox/mozilla.cfg
-        rm /usr/lib/firefox/distribution/policies.json
+        rm $INSTALL_LOCATION/mozilla.cfg
+        rm $INSTALL_LOCATION/distribution/policies.json
         exit
 fi
 
 read -p 'Start firefox config? [y] $> ' ANS
 if [ "$ANS" == y ];then
-        if [ -d /usr/lib/firefox/ ];then
-                echo "  ### FIREFOX POLICY UPDATE ###"
-                CONFIG_DIR=.
-                cp $CONFIG_DIR/Mozillacfg/local-settings.js /usr/lib/firefox/
-                cp $CONFIG_DIR/Mozillacfg/mozilla.cfg /usr/lib/firefox/
-                cp $CONFIG_DIR/Mozillacfg/policies.json /usr/lib/firefox/distribution/policies.json
-                chmod 644 /usr/lib/firefox/mozilla.cfg
-                chmod 644 /usr/lib/firefox/distribution/policies.json
-                cp $CONFIG_DIR/Mozillacfg/autoconfig.js /usr/lib/firefox/defaults/pref/
-                chmod 644 /usr/lib/firefox/defaults/pref/autoconfig.js
-        fi
+        echo "$BANNER"
+        cp $CONFIG_DIR/Mozillacfg/local-settings.js $INSTALL_LOCATION/
+        cp $CONFIG_DIR/Mozillacfg/mozilla.cfg $INSTALL_LOCATION/
+        chmod 644 $INSTALL_LOCATION/mozilla.cfg
+        cp $CONFIG_DIR/Mozillacfg/policies.json $INSTALL_LOCATION/distribution/policies.json
+        chmod 644 $INSTALL_LOCATION/distribution/policies.json
+        cp $CONFIG_DIR/Mozillacfg/autoconfig.js $INSTALL_LOCATION/defaults/pref/
+        chmod 644 $INSTALL_LOCATION/defaults/pref/autoconfig.js
 fi
