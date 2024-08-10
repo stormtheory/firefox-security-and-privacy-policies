@@ -147,6 +147,7 @@
       }
   },
 
+
     "SecurityDevices": {
       "OpenSC": "/usr/lib/x86_64-linux-gnu/pkcs11/opensc-pkcs11.so",
       "CoolKey": "/usr/lib/pkcs11/libcoolkeypk11.so",
