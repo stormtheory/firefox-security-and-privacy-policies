@@ -18,3 +18,8 @@ A: Make sure the policy file is named, permissioned, and placed in the right pla
 #
 # Q: How do I get started?
 A: Run the configure-firefox.sh script to install the new policies and config file in the right position or do it manually. Nothing too crazy here.
+
+# User agreement:
+This project is not a company or business. By using this project’s works, scripts, or code know that you, out of respect are entitled to privacy to highest grade. This product will not try to steal, share, collect, or sell your information. However 3rd parties such at Github may try to use your data without your consent. Users or admins should make reports of issue(s) related to the project’s product to the project to better equip or fix issues for others who may run into the same issue(s). By using this project’s works, scripts, code, or ideas you as the end user or admin agree to the following Warning statement and lack of acknowledge lack of Warranty.
+
+WARNING: This project and it’s work does not come with a Warranty of any kind. It is on the end user or admin to preform regular backups, maintain kickstarts, verify code and or policies, and maintain their own gear and or equipment. This project will try to stay to the highest standards but will not be held accountable for any kind of mishaps that may happen while using.
